@@ -2,7 +2,7 @@ import numpy as np
 
 
 class Variable:
-    def __init_(self, data):
+    def __init__(self, data):
         self.data = data
 
 
@@ -17,6 +17,11 @@ class Function:
 
     def forward(self, x):
         raise NotImplementedError()
+
+
+class Square(Function):
+    def forward(self, x):
+        return x ** 2
 
 
 class Exp(Function):
