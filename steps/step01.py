@@ -2,7 +2,7 @@ import numpy as np
 
 
 class Variable:
-    def __init__(self, data):
+    def __init_(self, data):
         self.data = data
 
 
